@@ -24,19 +24,27 @@ img {
     max-height: 800px;
 }
 
-/* width */
 ::-webkit-scrollbar {
     width: 4px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
     background: var(--bg);
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
     background: var(--accent);
+}
+
+.btn {
+    background-color: var(--accent);
+    color: white;
+    width: 200px;
+}
+
+footer a{
+    color: var(--accent) !important;
+    text-decoration: none !important;
 }
 
 @media only screen and (max-width: 575px) {
@@ -47,5 +55,9 @@ img {
     .col-sm {
         display: grid;
         justify-content: center;
+    }
+
+    .btn {
+        width: 100%;
     }
 }
